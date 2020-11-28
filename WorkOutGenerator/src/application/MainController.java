@@ -41,6 +41,7 @@ public class MainController {
     void show_goals_view(ActionEvent event) throws IOException {
     	String weight = weight_field.getText();
     	String height = height_field.getText();
+    	
     	MainModel.validate_weight_height(weight, height);
     	
     	main_view = FXMLLoader.load(getClass().getResource("Goal.fxml"));
