@@ -42,7 +42,13 @@ public class MainController {
     	String weight = weight_field.getText();
     	String height = height_field.getText();
     	
-    	MainModel.validate_weight_height(weight, height);
+    	boolean result = false;
+    	
+    	result = MainModel.validate_weight_height(weight, height);
+    	
+    	if(result == false) {
+    		return;
+    	}
     	
     	main_view = FXMLLoader.load(getClass().getResource("Goal.fxml"));
 		Scene scene = new Scene(main_view);
