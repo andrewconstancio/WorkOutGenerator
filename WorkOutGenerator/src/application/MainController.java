@@ -1,13 +1,17 @@
 package application;
 
-import java.awt.event.ActionEvent;
+import javafx.event.ActionEvent;
 import java.io.IOException;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 import Model.MainModel;
 
 public class MainController {
@@ -34,11 +38,23 @@ public class MainController {
     private ToggleButton male_button;
 
     @FXML
-    void show_goals_view() {
-    	
+    void show_goals_view(ActionEvent event) throws IOException {
     	String weight = weight_field.getText();
     	String height = height_field.getText();
-    	MainModel.validate_weight_height(weight, height);
+    	
+    	boolean result = false;
+    	
+    	result = MainModel.validate_weight_height(weight, height);
+    	
+    	if(result == false) {
+    		return;
+    	}
+    	
+    	main_view = FXMLLoader.load(getClass().getResource("Goal.fxml"));
+		Scene scene = new Scene(main_view);
+		Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
+		window.setScene(scene);
+		window.show();
     }
     
     @FXML
