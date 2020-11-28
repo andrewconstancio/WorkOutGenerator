@@ -6,9 +6,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.StackPane?>
 
-<AnchorPane prefHeight="600.0" prefWidth="875.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GoalsController">
+<AnchorPane fx:id="main_view" prefHeight="600.0" prefWidth="875.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GoalsController">
    <children>
-      <Pane prefHeight="600.0" prefWidth="875.0">
+      <Pane layoutY="21.0" prefHeight="600.0" prefWidth="875.0">
          <children>
             <Label layoutX="213.0" layoutY="54.0" prefHeight="117.0" prefWidth="450.0" text="What are your goals?">
                <font>
@@ -17,11 +17,25 @@
             </Label>
             <Button layoutX="64.0" layoutY="487.0" mnemonicParsing="false" onAction="#BackBtn" prefHeight="51.0" prefWidth="211.0" text="Back" />
             <Button layoutX="620.0" layoutY="487.0" mnemonicParsing="false" onAction="#NextBtn" prefHeight="51.0" prefWidth="211.0" text="Next" />
-            <Label layoutX="60.0" layoutY="202.0" prefHeight="81.0" prefWidth="262.0" text="Body Type Goal" />
-            <Label layoutX="595.0" layoutY="202.0" prefHeight="81.0" prefWidth="262.0" text="Avg Calories/Week" />
-            <Button layoutX="57.0" layoutY="283.0" mnemonicParsing="false" onAction="#Lean" text="Lean" />
-            <Button layoutX="161.0" layoutY="283.0" mnemonicParsing="false" onAction="#Buff" text="Buff" />
-            <TextArea fx:id="calories" layoutX="587.0" layoutY="270.0" prefHeight="110.0" prefWidth="225.0" text="enter calories" />
+            <Label layoutX="39.0" layoutY="202.0" prefHeight="81.0" prefWidth="262.0" text="Body Type Goal">
+               <font>
+                  <Font size="36.0" />
+               </font></Label>
+            <Label layoutX="489.0" layoutY="189.0" prefHeight="81.0" prefWidth="324.0" text="Avg Calories/Week">
+               <font>
+                  <Font size="36.0" />
+               </font></Label>
+            <TextArea fx:id="calories" layoutX="529.0" layoutY="270.0" prefHeight="110.0" prefWidth="225.0" />
+            <CheckBox layoutX="23.0" layoutY="300.0" mnemonicParsing="false" onAction="#Lean" prefHeight="110.0" prefWidth="184.0" text="Lean">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="213.0" layoutY="300.0" mnemonicParsing="false" onAction="#Buff" prefHeight="110.0" prefWidth="184.0" text="Buff">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </CheckBox>
          </children>
       </Pane>
    </children>

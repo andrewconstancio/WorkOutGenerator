@@ -41,11 +41,18 @@ public class GoalsController {
 			alert.setContentText("There arent any calories entered!!!");
 			alert.show();
 		}
+		else if(isLean == false && isBuff == false) {
+			Alert alert = new Alert(AlertType.ERROR);
+			alert.setContentText("you havent chose the goal of the body type!!!");
+			alert.show();
+		}
+		else {
 		mainPane = FXMLLoader.load(getClass().getResource("Days.fxml"));
 		Scene scene = new Scene(mainPane);
 		Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
 		window.setScene(scene);
 		window.show();
+		}
 	}
 	@FXML
 	public void BackBtn(ActionEvent event) throws IOException {
