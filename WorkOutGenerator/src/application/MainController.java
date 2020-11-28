@@ -35,6 +35,7 @@ public class MainController {
 
     @FXML
     void show_goals_view() {
+    	
     	String weight = weight_field.getText();
     	String height = height_field.getText();
     	MainModel.validate_weight_height(weight, height);
