@@ -33,7 +33,7 @@ public class MainModel {
 			O.getStyleClass().add("input-field-select");
 			
 			F.getStyleClass().clear();
-			F.getStyleClass().add("inpudt-field");
+			F.getStyleClass().add("input-field");
 			
 			M.getStyleClass().clear();
 			M.getStyleClass().add("input-field");
@@ -51,7 +51,7 @@ public class MainModel {
 	}
 	
 	
-	public static void validate_weight_height(String weight, String height) {
+	public static boolean validate_weight_height(String weight, String height) {
 		boolean checkWeight = is_numeric(weight);
 		boolean validHeight = vald_height(height);
 		
@@ -60,7 +60,7 @@ public class MainModel {
 			a.setAlertType(AlertType.ERROR);
 			a.setContentText("Weight Field is not a number. ");
 			a.show();
-			return;
+			return false;
 		}
 
 		if (validHeight == false) {
@@ -68,12 +68,12 @@ public class MainModel {
 			a.setAlertType(AlertType.ERROR);
 			a.setContentText("Height Field is not valid. ");
 			a.show();
-			return;
+			return false;
 		}
 		int iWeight = Integer.parseInt(weight);
 		CurrentUser.weight = iWeight;
 		
-		return;
+		return true;
 		
 	}
 }
