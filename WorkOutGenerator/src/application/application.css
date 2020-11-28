@@ -35,4 +35,9 @@
 	-fx-cursor: hand;
 }
 
+.combo_box{
+	-fx-background-color: rgba(237, 145, 145, .7);
+	-fx-cursor: hand;
+	-fx-font-size: 20;
+}
 
