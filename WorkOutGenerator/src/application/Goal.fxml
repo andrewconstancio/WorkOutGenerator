@@ -6,25 +6,24 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.StackPane?>
 
-
 <AnchorPane prefHeight="600.0" prefWidth="875.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GoalsController">
    <children>
-      <Pane prefHeight="600.0" prefWidth="800.0">
+      <Pane prefHeight="600.0" prefWidth="875.0">
          <children>
-            <Label layoutX="275.0" layoutY="83.0" prefHeight="117.0" prefWidth="450.0" text="What are your goals?">
+            <Label layoutX="213.0" layoutY="54.0" prefHeight="117.0" prefWidth="450.0" text="What are your goals?">
                <font>
                   <Font size="48.0" />
                </font>
             </Label>
-            <Button layoutX="64.0" layoutY="680.0" mnemonicParsing="false" onAction="#BackBtn" prefHeight="51.0" prefWidth="211.0" text="Back" />
-            <Button layoutX="725.0" layoutY="680.0" mnemonicParsing="false" onAction="#NextBtn" prefHeight="51.0" prefWidth="211.0" text="Next" />
-            <MenuButton fx:id="LeanOrBuff" layoutX="132.0" layoutY="340.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="287.0" text="What part of body?">
+            <Button layoutX="64.0" layoutY="487.0" mnemonicParsing="false" onAction="#BackBtn" prefHeight="51.0" prefWidth="211.0" text="Back" />
+            <Button layoutX="620.0" layoutY="487.0" mnemonicParsing="false" onAction="#NextBtn" prefHeight="51.0" prefWidth="211.0" text="Next" />
+            <MenuButton fx:id="LeanOrBuff" layoutX="64.0" layoutY="265.0" mnemonicParsing="false" onAction="#chooseTheType" prefHeight="71.0" prefWidth="287.0" text="What part of body?">
                <items>
                   <MenuItem mnemonicParsing="false" text="Action 2" />
                   <MenuItem mnemonicParsing="false" text="Action 3" />
                </items>
             </MenuButton>
-            <MenuButton fx:id="Nutritions" layoutX="582.0" layoutY="340.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="287.0" text="AVG  calories per day">
+            <MenuButton fx:id="Nutritions" layoutX="544.0" layoutY="265.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="287.0" text="AVG  calories per day">
                <items>
                   <MenuItem mnemonicParsing="false" text="Action 2" />
                   <MenuItem mnemonicParsing="false" text="Action 3" />
