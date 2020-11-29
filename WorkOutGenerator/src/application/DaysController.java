@@ -18,7 +18,7 @@ public class DaysController{
 
 	ObservableList<Integer> list = FXCollections.observableArrayList(1,2,3,4,5,6,7);
 	
-	CurrentUser user;
+	User user;
 	public boolean monday = false;
 	public boolean tuesday = false;
 	public boolean wednesday = false;
