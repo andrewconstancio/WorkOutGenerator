@@ -42,9 +42,7 @@ public class DaysController{
 
     @FXML
     void show_main_view(ActionEvent event) {
-    	
-    	try {
-    		
+    	try {	
     		//Load the main.fxml file and replace pane children
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(getClass().getResource("Goal.fxml"));
