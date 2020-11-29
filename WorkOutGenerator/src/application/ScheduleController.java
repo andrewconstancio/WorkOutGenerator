@@ -1,20 +1,46 @@
 package application;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
+import Model.GetSchedule;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-public class ScheduleController {
+public class ScheduleController implements Initializable  {
 	
 	@FXML
 	private AnchorPane mainPane;
+	
+
+    @FXML
+    private TextArea mondayText;
+    
+    @FXML
+    private TextArea tuesdayText;
+    
+    @FXML
+    private TextArea wedText;
+
+    @FXML
+    private TextArea thurText;
+    
+    @FXML
+    private TextArea fridayText;
+
+    @FXML
+    private TextArea satText;
+    
+    @FXML
+    private TextArea sunText;
 	
 	@FXML
 	public void Restart(ActionEvent event) throws IOException{
@@ -23,5 +49,11 @@ public class ScheduleController {
 		Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
 		window.setScene(scene);
 		window.show();
+	}
+
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
+		// TODO Auto-generated method stub
+		GetSchedule.get_schedule(mondayText, tuesdayText, wedText, thurText, fridayText, satText, sunText);
 	}
 }

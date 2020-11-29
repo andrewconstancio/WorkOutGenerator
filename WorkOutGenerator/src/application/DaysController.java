@@ -137,8 +137,6 @@ public class DaysController{
     @FXML
     void show_next_view(ActionEvent event) throws IOException{
     	
-    	ProccesingData.make_user_schedule();
-    	
     	mainPane = FXMLLoader.load(getClass().getResource("Schedule.fxml"));
 		Scene scene = new Scene(mainPane);
 		Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
