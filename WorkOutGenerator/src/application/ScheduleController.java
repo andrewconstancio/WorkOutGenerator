@@ -14,6 +14,7 @@ public class ScheduleController {
 	
 	@FXML
 	private AnchorPane mainPane;
+	
 	@FXML
 	public void Restart(ActionEvent event) throws IOException{
 		mainPane = FXMLLoader.load(getClass().getResource("Main.fxml"));
