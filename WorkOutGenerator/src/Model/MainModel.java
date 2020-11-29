@@ -17,6 +17,7 @@ public class MainModel {
 	
 	static CurrentUser userNew = new CurrentUser();
 	static ArrayList<WorkOut> muscleWorkouts = new ArrayList();
+	static ArrayList<WorkOut> cardioWorkouts = new ArrayList();
 	
 	public static void toggle_gender_buttons(ToggleButton M, ToggleButton F, ToggleButton O, String type) {
 		if(type == "male") {
@@ -88,17 +89,26 @@ public class MainModel {
 	
 		
 	public static void init_main_data() throws IOException {
-        String csvFile = "src/buildmuscle.csv";
-        BufferedReader br = null;
+        String csvFile1 = "src/buildmuscle.csv";
+        String csvFile2 = "src/cardio.csv";
+        BufferedReader br1 = null;
+        BufferedReader br2 = null;
         String line = "";
         String cvsSplitBy = ",";
         WorkOut workout = new WorkOut();
         
-        br = new BufferedReader(new FileReader(csvFile));
-        while ((line = br.readLine()) != null) {
+        br1 = new BufferedReader(new FileReader(csvFile1));
+        while ((line = br1.readLine()) != null) {
 		        String[] values = line.split(",");
 		        workout.workout(values[0], values[1], values[2]);
 		        muscleWorkouts.add(workout);
+		}
+        
+        br2 = new BufferedReader(new FileReader(csvFile2));
+        while ((line = br2.readLine()) != null) {
+		        String[] values = line.split(",");
+		        workout.workout(values[0], values[1], values[2]);
+		        cardioWorkouts.add(workout);
 		}
 	}
 }
