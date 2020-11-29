@@ -22,7 +22,7 @@
          <font>
             <Font size="30.0" />
          </font></Label>
-      <Button layoutX="554.0" layoutY="524.0" mnemonicParsing="false" onAction="#Restart" text="Restart" />
+      <Button layoutX="578.0" layoutY="525.0" mnemonicParsing="false" onAction="#Restart" text="Restart" textFill="#f82d2d" />
       <TextArea layoutX="37.0" layoutY="147.0" prefHeight="78.0" prefWidth="338.0" />
       <Label layoutX="36.0" layoutY="225.0" text="Tuesday">
          <font>
