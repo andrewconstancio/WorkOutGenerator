@@ -1,6 +1,7 @@
 package application;
 
 import java.io.IOException;
+import Model.ProccesingData;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -135,6 +136,9 @@ public class DaysController{
 
     @FXML
     void show_next_view(ActionEvent event) throws IOException{
+    	
+    	ProccesingData.printU();
+    	
     	mainPane = FXMLLoader.load(getClass().getResource("Schedule.fxml"));
 		Scene scene = new Scene(mainPane);
 		Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();

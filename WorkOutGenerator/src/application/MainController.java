@@ -48,6 +48,8 @@ public class MainController implements Initializable {
     	} catch(IOException e) {
     		e.printStackTrace();
     	}
+	   	
+	   	User.gender = "male";
 	}
 
     
