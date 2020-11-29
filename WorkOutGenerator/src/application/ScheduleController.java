@@ -16,7 +16,19 @@ public class ScheduleController {
 	@FXML
 	private AnchorPane mainPane;
 	@FXML
-	private TextArea mondayText;
+	public TextArea mondayText;
+	@FXML
+	public TextArea tuesdayText;
+	@FXML
+	public TextArea wedText;
+	@FXML
+	public TextArea thurText;
+	@FXML
+	public TextArea friText;
+	@FXML
+	public TextArea satText;
+	@FXML
+	public TextArea sunText;
 	
 	@FXML
 	public void Restart(ActionEvent event) throws IOException{

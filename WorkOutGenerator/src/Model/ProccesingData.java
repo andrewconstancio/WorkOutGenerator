@@ -12,7 +12,7 @@ public class ProccesingData {
 		for(i = 0; i < 7; ++i) {
 			if(User.days[i] == 1) {
 				if(User.gender == "male") {
-					//
+					
 					
 				}
 			} else {
