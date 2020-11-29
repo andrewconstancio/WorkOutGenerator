@@ -40,13 +40,12 @@ public class MainController implements Initializable {
     @FXML
     private ToggleButton male_button;
     
+    
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
-	   	User.gender = "male";
+	   	User.gender = "female";
 	}
-
-    
 
     @FXML
     void show_goals_view(ActionEvent event) throws IOException {
