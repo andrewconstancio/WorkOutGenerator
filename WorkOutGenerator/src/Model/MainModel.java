@@ -1,6 +1,14 @@
 package Model;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+
 import application.CurrentUser;
+import application.WorkOut;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.ToggleButton;
@@ -8,6 +16,7 @@ import javafx.scene.control.ToggleButton;
 public class MainModel {
 	
 	static CurrentUser userNew = new CurrentUser();
+	static ArrayList<WorkOut> muscleWorkouts = new ArrayList();
 	
 	public static void toggle_gender_buttons(ToggleButton M, ToggleButton F, ToggleButton O, String type) {
 		if(type == "male") {
@@ -75,5 +84,17 @@ public class MainModel {
 		
 		return true;
 		
+	}
+	
+		
+	public static void init_main_data() throws IOException {
+		System.out.println("it got here");
+		try (BufferedReader br = new BufferedReader(new FileReader("src/buildmuscle.csv"))) {
+		    String line;
+		    while ((line = br.readLine()) != null) {
+		        String[] values = line.split(",");
+		        System.out.println(values);
+		    }
+		}
 	}
 }

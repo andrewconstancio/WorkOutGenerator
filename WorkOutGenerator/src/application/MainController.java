@@ -2,6 +2,8 @@ package application;
 
 import javafx.event.ActionEvent;
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -36,6 +38,14 @@ public class MainController {
 
     @FXML
     private ToggleButton male_button;
+
+    public void inititalize(URL location, ResourceBundle resources) {
+    	try {
+    		MainModel.init_main_data();
+    	} catch(IOException e) {
+    		e.printStackTrace();
+    	}
+    }
 
     @FXML
     void show_goals_view(ActionEvent event) throws IOException {
