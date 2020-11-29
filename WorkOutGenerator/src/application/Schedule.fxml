@@ -18,12 +18,47 @@
             <Font size="30.0" />
          </font>
       </Label>
-      <Label layoutX="36.0" layoutY="134.0" text="Monday" />
-      <Button layoutX="709.0" layoutY="485.0" mnemonicParsing="false" onAction="#Restart" text="Restart" />
-      <TextArea layoutX="36.0" layoutY="151.0" prefHeight="92.0" prefWidth="338.0" />
-      <TextArea layoutX="36.0" layoutY="260.0" prefHeight="92.0" prefWidth="338.0" />
-      <TextArea layoutX="36.0" layoutY="372.0" prefHeight="92.0" prefWidth="338.0" />
-      <TextArea layoutX="36.0" layoutY="485.0" prefHeight="92.0" prefWidth="338.0" />
-      <TextArea layoutX="406.0" layoutY="151.0" prefHeight="92.0" prefWidth="338.0" />
+      <Label layoutX="36.0" layoutY="107.0" text="Monday">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <Button layoutX="554.0" layoutY="524.0" mnemonicParsing="false" onAction="#Restart" text="Restart" />
+      <TextArea layoutX="37.0" layoutY="147.0" prefHeight="78.0" prefWidth="338.0" />
+      <Label layoutX="36.0" layoutY="225.0" text="Tuesday">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="36.0" layoutY="270.0" prefHeight="78.0" prefWidth="338.0" />
+      <TextArea layoutX="37.0" layoutY="389.0" prefHeight="78.0" prefWidth="338.0" />
+      <Label layoutX="36.0" layoutY="344.0" text="Wednesday">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="36.0" layoutY="511.0" prefHeight="78.0" prefWidth="338.0" />
+      <Label layoutX="37.0" layoutY="467.0" text="Thursday">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="438.0" layoutY="124.0" text="Friday">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="438.0" layoutY="165.0" prefHeight="78.0" prefWidth="338.0" />
+      <Label layoutX="438.0" layoutY="243.0" text="Saturday">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="438.0" layoutY="288.0" prefHeight="78.0" prefWidth="338.0" />
+      <Label layoutX="438.0" layoutY="367.0" text="Sunday">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="438.0" layoutY="412.0" prefHeight="78.0" prefWidth="338.0" />
    </children>
 </AnchorPane>
