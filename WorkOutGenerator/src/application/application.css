@@ -13,6 +13,18 @@
 	-fx-background-color: rgba(237, 145, 145, 1);
 	-fx-cursor: hand;
 }
+.caloriesField{
+	-fx-background-color: rgba(237, 145, 145, .7);
+}
+.caloriesField .scroll-pane {
+    -fx-background-color: transparent;
+}
+.caloriesField .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+.caloriesField .scroll-pane .content{
+    -fx-background-color: transparent;
+}
 .input-field-select {
 	-fx-background-color: rgba(82, 106, 223, .7);
 	-fx-text-fill: white;

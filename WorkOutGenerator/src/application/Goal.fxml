@@ -15,8 +15,8 @@
                   <Font size="48.0" />
                </font>
             </Label>
-            <Button layoutX="64.0" layoutY="487.0" mnemonicParsing="false" onAction="#BackBtn" prefHeight="51.0" prefWidth="211.0" text="Back" />
-            <Button layoutX="620.0" layoutY="487.0" mnemonicParsing="false" onAction="#NextBtn" prefHeight="51.0" prefWidth="211.0" text="Next" />
+            <Button layoutX="64.0" layoutY="487.0" mnemonicParsing="false" onAction="#BackBtn" prefHeight="51.0" prefWidth="211.0" styleClass="button-next" text="Back" />
+            <Button layoutX="620.0" layoutY="487.0" mnemonicParsing="false" onAction="#NextBtn" prefHeight="51.0" prefWidth="211.0" styleClass="button-next" text="Next" />
             <Label layoutX="39.0" layoutY="202.0" prefHeight="81.0" prefWidth="262.0" text="Body Type Goal">
                <font>
                   <Font size="36.0" />
@@ -25,7 +25,7 @@
                <font>
                   <Font size="36.0" />
                </font></Label>
-            <TextArea fx:id="calories" layoutX="529.0" layoutY="270.0" prefHeight="110.0" prefWidth="225.0" />
+            <TextArea fx:id="calories" layoutX="529.0" layoutY="270.0" prefHeight="110.0" prefWidth="225.0" styleClass="caloriesField" />
             <CheckBox layoutX="23.0" layoutY="300.0" mnemonicParsing="false" onAction="#Lean" prefHeight="110.0" prefWidth="184.0" text="Lean">
                <font>
                   <Font size="36.0" />
