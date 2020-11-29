@@ -7,7 +7,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import application.CurrentUser;
+import application.User;
 import application.WorkOut;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
@@ -15,7 +15,7 @@ import javafx.scene.control.ToggleButton;
 
 public class MainModel {
 	
-	static CurrentUser userNew = new CurrentUser();
+	static User currUser = new User();
 	static ArrayList<WorkOut> muscleWorkouts = new ArrayList();
 	static ArrayList<WorkOut> cardioWorkouts = new ArrayList();
 	
@@ -49,7 +49,7 @@ public class MainModel {
 			M.getStyleClass().add("input-field");
 		}
 		
-		CurrentUser.gender = type;
+		User.gender = type;
 	}
 	
 	private static boolean is_numeric(String str) {
@@ -81,7 +81,7 @@ public class MainModel {
 			return false;
 		}
 		int iWeight = Integer.parseInt(weight);
-		CurrentUser.weight = iWeight;
+		User.weight = iWeight;
 		
 		return true;
 		
