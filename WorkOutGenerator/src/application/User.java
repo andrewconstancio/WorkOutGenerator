@@ -11,6 +11,6 @@ public class User {
 	public static int calories;
 	
 	
-	public static UserWorkOutSchedule workoutSchedule = new UserWorkOutSchedule();
+	public static UserWorkOutSchedule[] workoutSchedule = new UserWorkOutSchedule[7];
 	
 }
