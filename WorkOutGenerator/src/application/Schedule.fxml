@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="600.0" prefWidth="875.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="557.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label layoutX="109.0" layoutY="14.0" text="Workout Schedule Generator ">
          <font>
@@ -32,6 +32,5 @@
       <Label layoutX="31.0" layoutY="363.0" text="Friday" />
       <Label layoutX="30.0" layoutY="417.0" text="Saturday" />
       <Label layoutX="34.0" layoutY="475.0" text="Sunday" />
-      <Button layoutX="706.0" layoutY="460.0" mnemonicParsing="false" onAction="#Restart" text="restart" />
    </children>
 </AnchorPane>
