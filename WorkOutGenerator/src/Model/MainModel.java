@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 
 import application.CurrentUser;
@@ -86,13 +87,14 @@ public class MainModel {
 	}
 	
 		
-	public static void init_main_data() throws FileNotFoundException {
-		try (BufferedReader br = new BufferedReader(new FileReader("book.csv"))) {
+	public static void init_main_data() throws IOException {
+		System.out.println("it got here");
+		try (BufferedReader br = new BufferedReader(new FileReader("src/buildmuscle.csv"))) {
 		    String line;
 		    while ((line = br.readLine()) != null) {
 		        String[] values = line.split(",");
 		        System.out.println(values);
 		    }
-
+		}
 	}
 }
