@@ -27,10 +27,12 @@ public class GoalsController {
 		if(isLean == true) {
 			isLean = false;
 			User.lean = false;
+			User.buff = true;
 		}
 		else {
 			isLean = true;
 			User.lean = true;
+			User.buff = false;
 		}
 	}
 	@FXML
@@ -39,10 +41,12 @@ public class GoalsController {
 		if(isBuff == true) {
 			isBuff = false;
 			User.buff = false;
+			User.lean = true;
 		}
 		else {
 			isBuff = true;
 			User.buff = true;
+			User.lean = false;
 		}
 		
 	}
