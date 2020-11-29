@@ -38,9 +38,7 @@ public class MainController {
 
     @FXML
     private ToggleButton male_button;
-    
-    
-    @Override
+
     public void inititalize(URL location, ResourceBundle resources) {
     	try {
     		MainModel.init_main_data();
