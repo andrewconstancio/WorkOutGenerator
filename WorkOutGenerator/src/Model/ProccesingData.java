@@ -12,7 +12,6 @@ public class ProccesingData {
 
 	public static void make_user_schedule() {
 		
-		
 		UserWorkOutSchedule sched = new UserWorkOutSchedule();
 		
 		ArrayList<WorkOut> muscleArray = MainModel.getMuscleWorkouts();
@@ -24,13 +23,10 @@ public class ProccesingData {
 		for(i = 0; i < 7; ++i) {
 			if(User.days[i] == 1) {
 				if(User.gender == "male") {
-					sched.mondayWorkouts[0] = muscleArray.get(4);
-					System.out.println(sched.mondayWorkouts[0].name);
+					sched.mondayWorkouts[0] = muscleArray.get(2);
+					
 				}
 			}
 		}
 	}
-	
-	
-	
 }
