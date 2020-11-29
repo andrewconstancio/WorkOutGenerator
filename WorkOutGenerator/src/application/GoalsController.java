@@ -29,9 +29,11 @@ public class GoalsController {
 		//isBuff = false;
 		if(isLean == true) {
 			isLean = false;
+			User.lean = false;
 		}
 		else {
 			isLean = true;
+			User.lean = true;
 		}
 	}
 	@FXML
@@ -39,10 +41,13 @@ public class GoalsController {
 		//isLean = false;
 		if(isBuff == true) {
 			isBuff = false;
+			User.buff = false;
 		}
 		else {
 			isBuff = true;
+			User.buff = true;
 		}
+		
 	}
 	public static boolean isInteger(String str) {
 	    try {
