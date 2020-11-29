@@ -53,6 +53,7 @@ public class DaysController{
 		//isBuff = false;
 		if(monday == true) {
 			monday = false;
+			User.days[0] = 0;
 		}
 		else {
 			monday = true;
