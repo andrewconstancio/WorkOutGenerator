@@ -26,12 +26,12 @@
                   <Font size="36.0" />
                </font></Label>
             <TextArea fx:id="calories" layoutX="529.0" layoutY="270.0" prefHeight="110.0" prefWidth="225.0" styleClass="caloriesField" />
-            <CheckBox layoutX="23.0" layoutY="300.0" mnemonicParsing="false" onAction="#Lean" prefHeight="110.0" prefWidth="184.0" text="Lean">
+            <CheckBox layoutX="23.0" layoutY="300.0" mnemonicParsing="false" onAction="#Lean" prefHeight="110.0" prefWidth="184.0" styleClass="checkbox" text="Lean">
                <font>
                   <Font size="36.0" />
                </font>
             </CheckBox>
-            <CheckBox layoutX="213.0" layoutY="300.0" mnemonicParsing="false" onAction="#Buff" prefHeight="110.0" prefWidth="184.0" text="Buff">
+            <CheckBox layoutX="213.0" layoutY="300.0" mnemonicParsing="false" onAction="#Buff" prefHeight="110.0" prefWidth="184.0" styleClass="checkbox" text="Buff">
                <font>
                   <Font size="36.0" />
                </font>

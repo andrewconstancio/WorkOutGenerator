@@ -25,6 +25,24 @@
 .caloriesField .scroll-pane .content{
     -fx-background-color: transparent;
 }
+.checkbox{
+	selected-box-color: rgba(237, 145, 145, .7);
+	box-color: rgba(237, 145, 145, .7);
+	 mark-color: rgba(237, 145, 145, .7);
+}
+.checkbox:selected > .box {
+    /* background color for selected checkbox */
+    -fx-background-color: rgba(237, 145, 145, .7);
+}
+.checkbox > .box {
+    /* background color of unselected checkbox */
+    -fx-background-color: rgba(237, 145, 145, .7);
+}
+.checkbox:selected > .box > .mark,
+.checkbox:indeterminate  > .box > .mark {
+    /* modify mark color */
+    -fx-background-color: rgba(237, 145, 145, .7);
+}
 .input-field-select {
 	-fx-background-color: rgba(82, 106, 223, .7);
 	-fx-text-fill: white;
