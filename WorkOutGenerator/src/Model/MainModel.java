@@ -82,9 +82,9 @@ public class MainModel {
 		}
 		
 		int iWeight = Integer.parseInt(weight);
-		int iHeight = Integer.parseInt(height);
-			
+		
 		User.weight = iWeight;
+		User.height = height;
 		
 		return true;
 		
