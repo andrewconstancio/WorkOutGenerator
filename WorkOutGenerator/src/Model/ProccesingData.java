@@ -1,12 +1,9 @@
 package Model;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import Model.MainModel;
 
 import application.User;
-import application.UserWorkOutSchedule;
-import application.WorkOut;
 
 public class ProccesingData {
 
