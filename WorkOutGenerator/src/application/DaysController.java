@@ -39,19 +39,7 @@ public class DaysController{
     private ComboBox<Integer> days_combobox;
 
     // add no_of_days to combobox
-    
-	public void start(CurrentUser user) {
-    	days_combobox.getItems().addAll(list);
-    	days_combobox.getSelectionModel().select(0);
-    	
-    	this.user = user; // current user information
-	}
-	  
-    @FXML
-    void setDays(ActionEvent event) {
-    	user.days = days_combobox.getSelectionModel().getSelectedItem();
-    }
-    
+
     @FXML
     void show_main_view(ActionEvent event) {
     	
@@ -62,7 +50,7 @@ public class DaysController{
 			loader.setLocation(getClass().getResource("Goal.fxml"));
 			AnchorPane root = (AnchorPane)loader.load();
 			
-			main_view.getChildren().setAll(root);
+			mainPane.getChildren().setAll(root);
 
 		} catch (Exception exception) {
 			exception.printStackTrace();
