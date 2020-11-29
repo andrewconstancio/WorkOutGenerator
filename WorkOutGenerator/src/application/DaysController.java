@@ -19,7 +19,13 @@ public class DaysController{
 	ObservableList<Integer> list = FXCollections.observableArrayList(1,2,3,4,5,6,7);
 	
 	CurrentUser user;
-	
+	public boolean monday = false;
+	public boolean tuesday = false;
+	public boolean wednesday = false;
+	public boolean thursday = false;
+	public boolean friday = false;
+	public boolean saturday = false;
+	public boolean sunday = false;
     @FXML
     private AnchorPane main_view;
 
@@ -64,6 +70,76 @@ public class DaysController{
 		}
     	
     }
+    @FXML
+	public void Monday(ActionEvent event) throws IOException{
+		//isBuff = false;
+		if(monday == true) {
+			monday = false;
+		}
+		else {
+			monday = true;
+		}
+	}
+    @FXML
+	public void Tuesday(ActionEvent event) throws IOException{
+		//isBuff = false;
+		if(tuesday == true) {
+			tuesday = false;
+		}
+		else {
+			tuesday = true;
+		}
+	}
+    @FXML
+	public void Wednesday(ActionEvent event) throws IOException{
+		//isBuff = false;
+		if(wednesday == true) {
+			wednesday = false;
+		}
+		else {
+			wednesday = true;
+		}
+	}
+    @FXML
+	public void Thursday(ActionEvent event) throws IOException{
+		//isBuff = false;
+		if(thursday == true) {
+			thursday = false;
+		}
+		else {
+			thursday = true;
+		}
+	}
+    @FXML
+	public void Friday(ActionEvent event) throws IOException{
+		//isBuff = false;
+		if(friday == true) {
+			friday = false;
+		}
+		else {
+			friday = true;
+		}
+	}
+    @FXML
+	public void Saturday(ActionEvent event) throws IOException{
+		//isBuff = false;
+		if(saturday == true) {
+			saturday = false;
+		}
+		else {
+			saturday = true;
+		}
+	}
+    @FXML
+	public void Sunday(ActionEvent event) throws IOException{
+		//isBuff = false;
+		if(sunday == true) {
+			sunday = false;
+		}
+		else {
+			sunday = true;
+		}
+	}
 
     @FXML
     void show_next_view(ActionEvent event) throws IOException{
