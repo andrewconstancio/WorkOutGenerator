@@ -20,7 +20,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-public class DaysController implements Initializable{
+public class DaysController {
 
 	ObservableList<Integer> list = FXCollections.observableArrayList(1,2,3,4,5,6,7);
 	
