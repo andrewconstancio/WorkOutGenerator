@@ -80,7 +80,10 @@ public class MainModel {
 			a.show();
 			return false;
 		}
+		
 		int iWeight = Integer.parseInt(weight);
+		int iHeight = Integer.parseInt(height);
+			
 		User.weight = iWeight;
 		
 		return true;
