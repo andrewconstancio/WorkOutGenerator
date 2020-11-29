@@ -1,6 +1,6 @@
 package application;
 
-public class CurrentUser {
+public class User {
 	public static int weight;
 	public static int height;
 	public static String gender;

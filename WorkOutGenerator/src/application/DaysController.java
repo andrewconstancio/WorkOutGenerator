@@ -18,7 +18,7 @@ public class DaysController{
 
 	ObservableList<Integer> list = FXCollections.observableArrayList(1,2,3,4,5,6,7);
 	
-	CurrentUser user;
+	User user;
 	public boolean monday = false;
 	public boolean tuesday = false;
 	public boolean wednesday = false;
@@ -41,6 +41,7 @@ public class DaysController{
     // add no_of_days to combobox
 
     @FXML
+<<<<<<< HEAD
     void show_main_view(ActionEvent event) {
     	try {	
     		//Load the main.fxml file and replace pane children
@@ -55,6 +56,14 @@ public class DaysController{
 			exception.printStackTrace();
 		}
     	
+=======
+    void show_main_view(ActionEvent event) throws IOException{
+    	mainPane = FXMLLoader.load(getClass().getResource("Goal.fxml"));
+		Scene scene = new Scene(mainPane);
+		Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
+		window.setScene(scene);
+		window.show();
+>>>>>>> master
     }
     @FXML
 	public void Monday(ActionEvent event) throws IOException{
