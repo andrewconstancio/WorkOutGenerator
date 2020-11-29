@@ -43,8 +43,24 @@ public class MainController implements Initializable {
     
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		// TODO Auto-generated method stub
-	   	User.gender = "female";
+		if(User.gender == "male") {
+			MainModel.toggle_gender_buttons(male_button, female_button, other_button, "male");
+		}
+		else if(User.gender == "female") {
+			MainModel.toggle_gender_buttons(male_button, female_button, other_button, "female");
+		}
+		else if(User.gender == "other") {
+			MainModel.toggle_gender_buttons(male_button, female_button, other_button, "other");
+		}
+		else {
+			User.gender = "male";
+		}
+		if(User.height != null) {
+			height_field.appendText(User.height);
+		}
+		if(User.weight != 0) {
+			weight_field.appendText(Integer.toString(User.weight));
+		}
 	}
 
     @FXML
