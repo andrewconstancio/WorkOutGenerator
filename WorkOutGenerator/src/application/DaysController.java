@@ -1,13 +1,18 @@
 package application;
 
+import java.io.IOException;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 public class DaysController{
 
@@ -60,8 +65,12 @@ public class DaysController{
     }
 
     @FXML
-    void show_next_view(ActionEvent event) {
-
+    void show_next_view(ActionEvent event) throws IOException{
+    	main_view = FXMLLoader.load(getClass().getResource("Schedule.fxml"));
+		Scene scene = new Scene(main_view);
+		Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
+		window.setScene(scene);
+		window.show();
     }
     
 }
