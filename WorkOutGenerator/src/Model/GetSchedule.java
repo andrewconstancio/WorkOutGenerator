@@ -1,19 +1,19 @@
 package Model;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Random;
 
-import Model.MainModel;
-
 import application.User;
-import application.UserWorkOutSchedule;
 import application.WorkOut;
+import javafx.scene.control.TextArea;
 
-public class ProccesingData {
-
-	public static void make_user_schedule() {
+public class GetSchedule {
 	
+	
+	
+	@SuppressWarnings("static-access")
+	public static void get_schedule(TextArea monday, TextArea tueday, TextArea wedneday, TextArea thursday, TextArea friday, TextArea saturday, TextArea sunday) {
+		
 		ArrayList<WorkOut> muscleArray = MainModel.getMuscleWorkouts();
 		ArrayList<WorkOut> cardioArray = MainModel.getCardioWorkouts();
 		
@@ -284,4 +284,5 @@ public class ProccesingData {
 		}
 
 	}
+
 }
