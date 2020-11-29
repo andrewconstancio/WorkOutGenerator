@@ -16,8 +16,8 @@ import javafx.scene.control.ToggleButton;
 public class MainModel {
 	
 	static User currUser = new User();
-	static ArrayList<WorkOut> muscleWorkouts = new ArrayList();
-	static ArrayList<WorkOut> cardioWorkouts = new ArrayList();
+	static ArrayList<WorkOut> muscleWorkouts = new ArrayList<WorkOut>();
+	static ArrayList<WorkOut> cardioWorkouts = new ArrayList<WorkOut>();
 	
 	public static void toggle_gender_buttons(ToggleButton M, ToggleButton F, ToggleButton O, String type) {
 		if(type == "male") {
@@ -57,7 +57,7 @@ public class MainModel {
 	}
 	
 	private static boolean vald_height(String str) {
-		  return str.matches("^\\d\\'\\d");  //match a number with optional '-' and decimal.
+		  return str.matches("^\\d\\'\\d+");  //match a number with optional '-' and decimal.
 	}
 	
 	
