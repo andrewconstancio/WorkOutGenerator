@@ -16,8 +16,17 @@ import javafx.scene.control.ToggleButton;
 public class MainModel {
 	
 	static User currUser = new User();
-	static ArrayList<WorkOut> muscleWorkouts = new ArrayList<WorkOut>();
-	static ArrayList<WorkOut> cardioWorkouts = new ArrayList<WorkOut>();
+	public static ArrayList<WorkOut> muscleWorkouts = new ArrayList<WorkOut>();
+	public static ArrayList<WorkOut> cardioWorkouts = new ArrayList<WorkOut>();
+	
+	
+	public static ArrayList<WorkOut>  getMuscleWorkouts() {
+		return muscleWorkouts;
+	}
+	
+	public static ArrayList<WorkOut>  getCardioWorkouts() {
+		return cardioWorkouts;
+	}
 	
 	public static void toggle_gender_buttons(ToggleButton M, ToggleButton F, ToggleButton O, String type) {
 		if(type == "male") {
@@ -107,11 +116,15 @@ public class MainModel {
 		        muscleWorkouts.add(workout);
 		}
         
+        br1.close();
+        
         br2 = new BufferedReader(new FileReader(csvFile2));
         while ((line = br2.readLine()) != null) {
 		        String[] values = line.split(",");
 		        workout.workout(values[0], values[1], values[2]);
 		        cardioWorkouts.add(workout);
 		}
+        
+        br2.close();
 	}
 }
