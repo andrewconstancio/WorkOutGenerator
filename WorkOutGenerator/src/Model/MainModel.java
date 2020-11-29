@@ -107,21 +107,21 @@ public class MainModel {
         BufferedReader br2 = null;
         String line = "";
         String cvsSplitBy = ",";
-        WorkOut workout = new WorkOut();
-        WorkOut workout2 = new WorkOut();
         
         br1 = new BufferedReader(new FileReader(csvFile1));
         while ((line = br1.readLine()) != null) {
 		        String[] values = line.split(",");
+		        WorkOut workout = new WorkOut();
 		        workout.workout(values[0], values[1], values[2]);
 		        muscleWorkouts.add(workout);
 		}
-        
+
         br1.close();
         
         br2 = new BufferedReader(new FileReader(csvFile2));
         while ((line = br2.readLine()) != null) {
 		        String[] values = line.split(",");
+		        WorkOut workout2 = new WorkOut();
 		        workout2.workout(values[0], values[1], values[2]);
 		        cardioWorkouts.add(workout2);
 		}
