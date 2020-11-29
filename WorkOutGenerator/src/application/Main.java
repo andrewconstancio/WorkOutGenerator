@@ -1,5 +1,6 @@
 package application;
 	
+import Model.MainModel;
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
@@ -11,6 +12,9 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
+			
+    		MainModel.init_main_data();
+			
 			AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("Main.fxml"));
 			Scene scene = new Scene(root,875,600);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());

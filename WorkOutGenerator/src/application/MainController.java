@@ -43,12 +43,6 @@ public class MainController implements Initializable {
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
-	   	try {
-    		MainModel.init_main_data();
-    	} catch(IOException e) {
-    		e.printStackTrace();
-    	}
-	   	
 	   	User.gender = "male";
 	}
 
