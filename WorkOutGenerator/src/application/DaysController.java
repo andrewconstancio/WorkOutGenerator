@@ -1,6 +1,9 @@
 package application;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
+
 import Model.ProccesingData;
 
 import javafx.collections.FXCollections;
@@ -8,14 +11,16 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-public class DaysController{
+public class DaysController implements Initializable{
 
 	ObservableList<Integer> list = FXCollections.observableArrayList(1,2,3,4,5,6,7);
 	
@@ -37,8 +42,19 @@ public class DaysController{
     private Button back_main_button;
 
     @FXML
-    private ComboBox<Integer> days_combobox;
-
+    private CheckBox mon;
+    @FXML
+    private CheckBox tues;
+    @FXML
+    private CheckBox wed;
+    @FXML
+    private CheckBox thur;
+    @FXML
+    private CheckBox fri;
+    @FXML
+    private CheckBox sat;
+    @FXML
+    private CheckBox sun;
     // add no_of_days to combobox
 
     @FXML

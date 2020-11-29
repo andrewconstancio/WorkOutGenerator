@@ -14,6 +14,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.CheckBox;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -24,10 +25,26 @@ public class GoalsController implements Initializable {
 	private AnchorPane mainPane;
 	@FXML
 	public TextArea calories;
+	@FXML
+	public CheckBox box;
+	@FXML
+	public CheckBox box2;
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		
+		if(String.valueOf(User.lean) == "true") {
+			box.setSelected(true);
+		}
+		else {
+			box.setSelected(false);
+		}
+		if(String.valueOf(User.buff) == "true")
+		{
+			box2.setSelected(true);
+		}
+		else {
+			box2.setSelected(false);
+		}
 	}
 	
 	@FXML
