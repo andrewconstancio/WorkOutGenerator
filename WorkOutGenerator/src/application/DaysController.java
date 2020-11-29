@@ -57,6 +57,7 @@ public class DaysController{
 		}
 		else {
 			monday = true;
+			User.days[0] = 1;
 		}
 	}
     @FXML
@@ -64,9 +65,11 @@ public class DaysController{
 		//isBuff = false;
 		if(tuesday == true) {
 			tuesday = false;
+			User.days[1] = 0;
 		}
 		else {
 			tuesday = true;
+			User.days[1] = 1;
 		}
 	}
     @FXML
@@ -74,9 +77,11 @@ public class DaysController{
 		//isBuff = false;
 		if(wednesday == true) {
 			wednesday = false;
+			User.days[2] = 0;
 		}
 		else {
 			wednesday = true;
+			User.days[2] = 1;
 		}
 	}
     @FXML
@@ -84,9 +89,11 @@ public class DaysController{
 		//isBuff = false;
 		if(thursday == true) {
 			thursday = false;
+			User.days[3] = 0;
 		}
 		else {
 			thursday = true;
+			User.days[3] = 1;
 		}
 	}
     @FXML
@@ -94,9 +101,11 @@ public class DaysController{
 		//isBuff = false;
 		if(friday == true) {
 			friday = false;
+			User.days[4] = 0;
 		}
 		else {
 			friday = true;
+			User.days[4] = 1;
 		}
 	}
     @FXML
@@ -104,9 +113,11 @@ public class DaysController{
 		//isBuff = false;
 		if(saturday == true) {
 			saturday = false;
+			User.days[5] = 0;
 		}
 		else {
 			saturday = true;
+			User.days[5] = 1;
 		}
 	}
     @FXML
@@ -114,9 +125,11 @@ public class DaysController{
 		//isBuff = false;
 		if(sunday == true) {
 			sunday = false;
+			User.days[6] = 0;
 		}
 		else {
 			sunday = true;
+			User.days[6] = 1;
 		}
 	}
 
