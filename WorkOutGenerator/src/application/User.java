@@ -3,13 +3,14 @@ package application;
 public class User {
 	
 	public static int weight;
-	public static int height;
+	public static String height;
 	public static String gender;
 <<<<<<< HEAD
 	public int days;
 =======
 	public static int days[];
-	public static String leanOrBuff;
+	public static Boolean lean;
+	public static Boolean buff;
 	public static int calories;
 >>>>>>> master
 	
