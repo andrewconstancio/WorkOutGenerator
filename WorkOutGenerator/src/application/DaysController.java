@@ -27,7 +27,7 @@ public class DaysController{
 	public boolean saturday = false;
 	public boolean sunday = false;
     @FXML
-    private AnchorPane main_view;
+    private AnchorPane mainPane;
 
     @FXML
     private Button next_main_button;
@@ -142,8 +142,8 @@ public class DaysController{
 
     @FXML
     void show_next_view(ActionEvent event) throws IOException{
-    	main_view = FXMLLoader.load(getClass().getResource("Schedule.fxml"));
-		Scene scene = new Scene(main_view);
+    	mainPane = FXMLLoader.load(getClass().getResource("Schedule.fxml"));
+		Scene scene = new Scene(mainPane);
 		Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
 		window.setScene(scene);
 		window.show();
