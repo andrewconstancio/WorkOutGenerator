@@ -23,20 +23,20 @@
             <Font size="30.0" />
          </font></Label>
       <Button layoutX="578.0" layoutY="525.0" mnemonicParsing="false" onAction="#Restart" text="Restart" textFill="#f82d2d" />
-      <TextArea fx:id="mondayText" layoutX="36.0" layoutY="147.0" prefHeight="78.0" prefWidth="338.0" />
+      <TextArea layoutX="36.0" layoutY="147.0" prefHeight="78.0" prefWidth="338.0" />
       <Label layoutX="36.0" layoutY="225.0" text="Tuesday">
          <font>
             <Font size="30.0" />
          </font>
       </Label>
-      <TextArea fx:id="tuesdayText" layoutX="36.0" layoutY="270.0" prefHeight="78.0" prefWidth="338.0" />
-      <TextArea fx:id="wedText" layoutX="37.0" layoutY="389.0" prefHeight="78.0" prefWidth="338.0" />
+      <TextArea layoutX="36.0" layoutY="270.0" prefHeight="78.0" prefWidth="338.0" />
+      <TextArea layoutX="37.0" layoutY="389.0" prefHeight="78.0" prefWidth="338.0" />
       <Label layoutX="36.0" layoutY="344.0" text="Wednesday">
          <font>
             <Font size="30.0" />
          </font>
       </Label>
-      <TextArea fx:id="thurText" layoutX="36.0" layoutY="511.0" prefHeight="78.0" prefWidth="338.0" />
+      <TextArea layoutX="36.0" layoutY="511.0" prefHeight="78.0" prefWidth="338.0" />
       <Label layoutX="37.0" layoutY="467.0" text="Thursday">
          <font>
             <Font size="30.0" />
@@ -47,18 +47,18 @@
             <Font size="30.0" />
          </font>
       </Label>
-      <TextArea fx:id="fridayText" layoutX="438.0" layoutY="165.0" prefHeight="78.0" prefWidth="338.0" />
+      <TextArea layoutX="438.0" layoutY="165.0" prefHeight="78.0" prefWidth="338.0" />
       <Label layoutX="438.0" layoutY="243.0" text="Saturday">
          <font>
             <Font size="30.0" />
          </font>
       </Label>
-      <TextArea fx:id="satText" layoutX="438.0" layoutY="288.0" prefHeight="78.0" prefWidth="338.0" />
+      <TextArea layoutX="438.0" layoutY="288.0" prefHeight="78.0" prefWidth="338.0" />
       <Label layoutX="438.0" layoutY="367.0" text="Sunday">
          <font>
             <Font size="30.0" />
          </font>
       </Label>
-      <TextArea fx:id="sunText" layoutX="438.0" layoutY="412.0" prefHeight="78.0" prefWidth="338.0" />
+      <TextArea layoutX="438.0" layoutY="412.0" prefHeight="78.0" prefWidth="338.0" />
    </children>
 </AnchorPane>

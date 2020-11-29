@@ -2,6 +2,7 @@ package Model;
 
 import java.util.Arrays;
 
+import application.ScheduleController;
 import application.User;
 
 public class ProccesingData {
@@ -13,14 +14,12 @@ public class ProccesingData {
 			if(User.days[i] == 1) {
 				if(User.gender == "male") {
 					
-					
 				}
-			} else {
+			}
+			else {
 				
 			}
 		}
 	}
-	
-	
 	
 }
