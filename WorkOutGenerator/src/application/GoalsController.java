@@ -7,38 +7,80 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 public class GoalsController {
-	
+	public boolean isLean = false;
+	public boolean isBuff = false;
 	@FXML
 	private AnchorPane mainPane;
 	@FXML
-	private MenuButton LeanOrBuff;
-	@FXML
-	private MenuButton Weight;
-	@FXML
-	private MenuButton Nutritions;
-	@FXML
-	private MenuItem lean;
-	@FXML
-	private MenuItem buff;
+	public TextArea calories;
 	
 	@FXML
-	public void chooseTheType(ActionEvent event) throws IOException{
-		
+	public void Lean(ActionEvent event) throws IOException{
+		//isBuff = false;
+		if(isLean == true) {
+			isLean = false;
+		}
+		else {
+			isLean = true;
+		}
+	}
+	@FXML
+	public void Buff(ActionEvent event) throws IOException{
+		//isLean = false;
+		if(isBuff == true) {
+			isBuff = false;
+		}
+		else {
+			isBuff = true;
+		}
+	}
+	public static boolean isInteger(String str) {
+	    try {
+	        Integer.parseInt(str);
+	        return true;
+	    } catch (NumberFormatException nfe) {
+	        return false;
+	    }
 	}
 	@FXML
 	public void NextBtn(ActionEvent event) throws IOException {
+		if(calories.getText().isEmpty()) {
+			Alert alert = new Alert(AlertType.ERROR);
+			alert.setContentText("There arent any calories entered!!!");
+			alert.show();
+		}
+		else if(isInteger(calories.getText()) == false) {
+			Alert alert = new Alert(AlertType.ERROR);
+			alert.setContentText("Calories has to be number!!!");
+			alert.show();
+		}
+		else if(isLean == false && isBuff == false) {
+			Alert alert = new Alert(AlertType.ERROR);
+			alert.setContentText("you havent chose the goal of the body type!!!");
+			alert.show();
+		}
+		else if(isLean == true && isBuff == true) {
+			Alert alert = new Alert(AlertType.ERROR);
+			alert.setContentText("you can only pick one body type!!!");
+			alert.show();
+		}
+		else {
 		mainPane = FXMLLoader.load(getClass().getResource("Days.fxml"));
 		Scene scene = new Scene(mainPane);
 		Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
 		window.setScene(scene);
 		window.show();
+		}
 	}
 	@FXML
 	public void BackBtn(ActionEvent event) throws IOException {
