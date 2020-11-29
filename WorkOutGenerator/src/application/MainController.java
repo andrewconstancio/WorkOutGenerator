@@ -7,6 +7,7 @@ import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -16,7 +17,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import Model.MainModel;
 
-public class MainController {
+public class MainController implements Initializable {
 
     @FXML
     private AnchorPane main_view;
@@ -38,14 +39,18 @@ public class MainController {
 
     @FXML
     private ToggleButton male_button;
-
-    public void inititalize(URL location, ResourceBundle resources) {
-    	try {
+    
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
+		// TODO Auto-generated method stub
+	   	try {
     		MainModel.init_main_data();
     	} catch(IOException e) {
     		e.printStackTrace();
     	}
-    }
+	}
+
+    
 
     @FXML
     void show_goals_view(ActionEvent event) throws IOException {
@@ -81,5 +86,4 @@ public class MainController {
     void toggle_other_button() {
     	MainModel.toggle_gender_buttons(male_button, female_button, other_button, "other");
     }
-
 }

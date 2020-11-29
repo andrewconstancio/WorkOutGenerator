@@ -88,13 +88,17 @@ public class MainModel {
 	
 		
 	public static void init_main_data() throws IOException {
-		System.out.println("it got here");
-		try (BufferedReader br = new BufferedReader(new FileReader("src/buildmuscle.csv"))) {
-		    String line;
-		    while ((line = br.readLine()) != null) {
+        String csvFile = "src/buildmuscle.csv";
+        BufferedReader br = null;
+        String line = "";
+        String cvsSplitBy = ",";
+        WorkOut workout = new WorkOut();
+        
+        br = new BufferedReader(new FileReader(csvFile));
+        while ((line = br.readLine()) != null) {
 		        String[] values = line.split(",");
-		        System.out.println(values);
-		    }
+		        workout.workout(values[0], values[1], values[2]);
+		        muscleWorkouts.add(workout);
 		}
 	}
 }
