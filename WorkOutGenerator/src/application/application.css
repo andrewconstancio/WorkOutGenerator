@@ -2,12 +2,13 @@
 #main_view {
 	-fx-background-color: rgba(149, 49, 49, 1);
 }
-
+#hello{
+	-fx-background-color: rgba(149, 49, 49, 1);
+}
 .input-field {
 	-fx-background-color: rgba(237, 145, 145, .7);
 	-fx-cursor: hand;
 }
-
 .input-field:hover {
 	-fx-background-color: rgba(237, 145, 145, 1);
 	-fx-cursor: hand;
