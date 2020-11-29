@@ -48,7 +48,7 @@ public class DaysController{
     		
     		//Load the main.fxml file and replace pane children
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(getClass().getResource("Main.fxml"));
+			loader.setLocation(getClass().getResource("Goal.fxml"));
 			AnchorPane root = (AnchorPane)loader.load();
 			
 			main_view.getChildren().setAll(root);
