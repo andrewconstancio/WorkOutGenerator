@@ -13,13 +13,11 @@
 	-fx-background-color: rgba(237, 145, 145, 1);
 	-fx-cursor: hand;
 }
-
 .input-field-select {
 	-fx-background-color: rgba(82, 106, 223, .7);
 	-fx-text-fill: white;
 	-fx-cursor: hand;
 }
-
 .input-field-select:hover {
 	-fx-background-color: rgba(82, 106, 223, 1);
 	-fx-text-fill: white;

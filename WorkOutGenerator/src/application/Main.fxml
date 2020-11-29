@@ -35,6 +35,6 @@
             <Font size="29.0" />
          </font>
       </ToggleButton>
-      <Text fill="WHITE" layoutX="319.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender" wrappingWidth="68.9716796875" />
+      <Text fill="WHITE" layoutX="319.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender" wrappingWidth="88.9716796875" />
         </children>
 </AnchorPane>
