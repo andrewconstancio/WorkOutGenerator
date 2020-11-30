@@ -6,59 +6,59 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="hello" prefHeight="600.0" prefWidth="875.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ScheduleController">
+<AnchorPane fx:id="hello" prefHeight="622.0" prefWidth="875.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ScheduleController">
    <children>
-      <Label layoutX="224.0" layoutY="23.0" text="Workout Schedule Generator ">
+      <Label layoutX="224.0" layoutY="23.0" text="Workout Schedule Generator " textFill="WHITE">
          <font>
             <Font size="36.0" />
          </font>
       </Label>
-      <Label layoutX="244.0" layoutY="78.0" prefHeight="44.0" prefWidth="406.0" text="This is your scheule for the week">
+      <Label layoutX="246.0" layoutY="55.0" prefHeight="44.0" prefWidth="406.0" text="This is your scheule for the week" textFill="WHITE">
          <font>
             <Font size="30.0" />
          </font>
       </Label>
-      <Label layoutX="36.0" layoutY="107.0" text="Monday">
+      <Label layoutX="40.0" layoutY="85.0" prefHeight="44.0" prefWidth="109.0" text="Monday" textFill="WHITE">
          <font>
-            <Font size="30.0" />
+            <Font size="20.0" />
          </font></Label>
-      <Button layoutX="590.0" layoutY="525.0" mnemonicParsing="false" onAction="#Restart" styleClass="button-next" text="Restart" textFill="#1b1919" />
-      <TextArea fx:id="mondayText" layoutX="36.0" layoutY="147.0" prefHeight="78.0" prefWidth="338.0" styleClass="caloriesField" />
-      <Label layoutX="36.0" layoutY="225.0" text="Tuesday">
+      <Button layoutX="714.0" layoutY="539.0" mnemonicParsing="false" onAction="#Restart" prefHeight="50.0" prefWidth="119.0" styleClass="button-next" text="Restart" />
+      <TextArea fx:id="mondayText" layoutX="38.0" layoutY="121.0" prefHeight="99.0" prefWidth="365.0" styleClass="caloriesField" />
+      <Label layoutX="41.0" layoutY="218.0" text="Tuesday" textFill="WHITE">
          <font>
-            <Font size="30.0" />
+            <Font size="20.0" />
          </font>
       </Label>
-      <TextArea fx:id="tuesdayText" layoutX="36.0" layoutY="270.0" prefHeight="78.0" prefWidth="338.0" styleClass="caloriesField" />
-      <TextArea fx:id="wedText" layoutX="37.0" layoutY="389.0" prefHeight="78.0" prefWidth="338.0" styleClass="caloriesField" />
-      <Label layoutX="36.0" layoutY="344.0" text="Wednesday">
+      <TextArea fx:id="tuesdayText" layoutX="38.0" layoutY="242.0" prefHeight="99.0" prefWidth="365.0" styleClass="caloriesField" />
+      <TextArea fx:id="wednesdayText" layoutX="37.0" layoutY="367.0" prefHeight="99.0" prefWidth="365.0" styleClass="caloriesField" />
+      <Label layoutX="40.0" layoutY="341.0" text="Wedneday" textFill="WHITE">
          <font>
-            <Font size="30.0" />
+            <Font size="20.0" />
          </font>
       </Label>
-      <TextArea fx:id="thurText" layoutX="36.0" layoutY="511.0" prefHeight="78.0" prefWidth="338.0" styleClass="caloriesField" />
-      <Label layoutX="37.0" layoutY="467.0" text="Thursday">
+      <TextArea fx:id="thursdayText" layoutX="37.0" layoutY="492.0" prefHeight="99.0" prefWidth="365.0" styleClass="caloriesField" />
+      <Label layoutX="43.0" layoutY="466.0" text="Thursday" textFill="WHITE">
          <font>
-            <Font size="30.0" />
+            <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="438.0" layoutY="124.0" text="Friday">
+      <TextArea fx:id="fridayText" layoutX="470.0" layoutY="121.0" prefHeight="99.0" prefWidth="365.0" styleClass="caloriesField" />
+      <TextArea fx:id="saturdayText" layoutX="470.0" layoutY="242.0" prefHeight="99.0" prefWidth="365.0" styleClass="caloriesField" />
+      <TextArea fx:id="sundayText" layoutX="470.0" layoutY="367.0" prefHeight="99.0" prefWidth="365.0" styleClass="caloriesField" />
+      <Label layoutX="472.0" layoutY="86.0" prefHeight="44.0" prefWidth="109.0" text="Friday" textFill="WHITE">
          <font>
-            <Font size="30.0" />
+            <Font size="20.0" />
          </font>
       </Label>
-      <TextArea fx:id="fridayText" layoutX="438.0" layoutY="165.0" prefHeight="78.0" prefWidth="338.0" styleClass="caloriesField" />
-      <Label layoutX="438.0" layoutY="243.0" text="Saturday">
+      <Label layoutX="472.0" layoutY="209.0" prefHeight="44.0" prefWidth="109.0" text="Saturday" textFill="WHITE">
          <font>
-            <Font size="30.0" />
+            <Font size="20.0" />
          </font>
       </Label>
-      <TextArea fx:id="satText" layoutX="438.0" layoutY="288.0" prefHeight="78.0" prefWidth="338.0" styleClass="caloriesField" />
-      <Label layoutX="438.0" layoutY="367.0" text="Sunday">
+      <Label layoutX="472.0" layoutY="332.0" prefHeight="44.0" prefWidth="109.0" text="Sunday" textFill="WHITE">
          <font>
-            <Font size="30.0" />
+            <Font size="20.0" />
          </font>
       </Label>
-      <TextArea fx:id="sunText" layoutX="438.0" layoutY="412.0" prefHeight="78.0" prefWidth="338.0" styleClass="caloriesField" />
    </children>
 </AnchorPane>
