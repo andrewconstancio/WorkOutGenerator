@@ -307,6 +307,12 @@ public class GetSchedule {
 					+ User.workoutSchedule[i].dayWorkouts[3].name + " " + User.workoutSchedule[i].dayWorkouts[3].sets + " " + User.workoutSchedule[i].dayWorkouts[3].reps + "\n"
 					+ User.workoutSchedule[i].dayWorkouts[4].name + " " + User.workoutSchedule[i].dayWorkouts[4].sets + " " + User.workoutSchedule[i].dayWorkouts[4].reps + "\n";
 					monday.setText(workStr);
+					User.workoutSchedule[i].dayWorkouts[0] = null;
+					User.workoutSchedule[i].dayWorkouts[1] = null;
+					User.workoutSchedule[i].dayWorkouts[2] = null;
+					User.workoutSchedule[i].dayWorkouts[3] = null;
+					User.workoutSchedule[i].dayWorkouts[4] = null;
+					System.out.println(workStr);
 				}
 			} else if(i == 1) {
 				if(User.workoutSchedule[i].dayWorkouts[0].name != "None") {

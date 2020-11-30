@@ -49,13 +49,11 @@ public class ScheduleController implements Initializable  {
 		User.calories = 0;
 		User.lean = false;
 		User.buff = false;
-		//mondayText.clear();
-		//tuesdayText.clear();
-		//wednesdayText.clear();
-		//thursdayText.clear();
-		//fridayText.clear();
-		//saturdayText.clear();
-		//sundayText.clear();
+		User.workoutSchedule = new UserWorkOutSchedule[7];
+		int i;
+		for(i = 0; i < 7; ++i) {
+			User.days[i] = 0;
+		}
 		mainPane = FXMLLoader.load(getClass().getResource("Main.fxml"));
 		Scene scene = new Scene(mainPane);
 		Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
@@ -66,13 +64,13 @@ public class ScheduleController implements Initializable  {
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
-		//mondayText.clear();
-		//tuesdayText.clear();
-		//wednesdayText.clear();
-		//thursdayText.clear();
-		//fridayText.clear();
-		//saturdayText.clear();
-		//sundayText.clear();
+		mondayText.clear();
+		tuesdayText.clear();
+		wednesdayText.clear();
+		thursdayText.clear();
+		fridayText.clear();
+		saturdayText.clear();
+		sundayText.clear();
 		GetSchedule.get_schedule(mondayText, tuesdayText, wednesdayText, thursdayText, fridayText, saturdayText, sundayText);
 	}
 }
