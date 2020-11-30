@@ -29,7 +29,7 @@ public class GoalsController implements Initializable {
 	public CheckBox box;
 	@FXML
 	public CheckBox box2;
-	
+	//to make sure if user press back button all the information is still there instead of resetting
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		if(String.valueOf(User.lean) == "true") {
@@ -48,7 +48,7 @@ public class GoalsController implements Initializable {
 		//	box2.setSelected(false);
 		//}
 	}
-	
+	//button for if user wants to be lean instead of buff 
 	@FXML
 	public void Lean(ActionEvent event) throws IOException{
 		//isBuff = false;
@@ -65,6 +65,7 @@ public class GoalsController implements Initializable {
 			//User.buff = false;
 		}
 	}
+	//button for if user wants to be buff instead of lean
 	@FXML
 	public void Buff(ActionEvent event) throws IOException{
 		//isLean = false;
@@ -82,6 +83,7 @@ public class GoalsController implements Initializable {
 		}
 		
 	}
+	//checks if the string is in numbers
 	public static boolean isInteger(String str) {
 	    try {
 	        Integer.parseInt(str);
@@ -90,6 +92,7 @@ public class GoalsController implements Initializable {
 	        return false;
 	    }
 	}
+	//moves to the next scene but if there are certain inputs that arent allowed it will print out the error message
 	@FXML
 	public void NextBtn(ActionEvent event) throws IOException {
 		if(calories.getText().isEmpty()) {
@@ -120,6 +123,7 @@ public class GoalsController implements Initializable {
 		window.show();
 		}
 	}
+	//back button to go back to the previous scene 
 	@FXML
 	public void BackBtn(ActionEvent event) throws IOException {
 		mainPane = FXMLLoader.load(getClass().getResource("Main.fxml"));

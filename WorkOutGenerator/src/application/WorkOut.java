@@ -1,5 +1,5 @@
 package application;
-
+//saves name reps and sets from the csv file that has information about the workout
 public class WorkOut {
 	public String name;
 	public String reps;

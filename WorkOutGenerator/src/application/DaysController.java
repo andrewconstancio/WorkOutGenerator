@@ -1,5 +1,4 @@
 package application;
-
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -56,7 +55,7 @@ public class DaysController {
     @FXML
     private CheckBox sun;
     // add no_of_days to combobox
-
+    //back button to go back to the scene before the current scene which is Goal.fxml
     @FXML
     void show_main_view(ActionEvent event) throws IOException{
     	mainPane = FXMLLoader.load(getClass().getResource("Goal.fxml"));
@@ -65,6 +64,7 @@ public class DaysController {
 		window.setScene(scene);
 		window.show();
     }
+    //marking the days user chose to work out and if the button has been clicked then it will unclick it if clicked again through monday to sunday
     @FXML
 	public void Monday(ActionEvent event) throws IOException{
 		//isBuff = false;
@@ -149,7 +149,7 @@ public class DaysController {
 			User.days[6] = 1;
 		}
 	}
-
+    //show_next_view moves to the next scene which is Schedule.fxml
     @FXML
     void show_next_view(ActionEvent event) throws IOException{
     	

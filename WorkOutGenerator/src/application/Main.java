@@ -1,5 +1,7 @@
 package application;
-	
+/*
+ * It runs the whole program	
+ */
 import Model.MainModel;
 import javafx.application.Application;
 import javafx.stage.Stage;
