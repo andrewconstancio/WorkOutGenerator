@@ -303,11 +303,11 @@ public class GetSchedule {
 					String workStr =
 					"Name  | Sets  | Reps\n"
 					+ "----------------------\n" +
-					User.workoutSchedule[i].dayWorkouts[0].name + " " + User.workoutSchedule[i].dayWorkouts[0].sets + " " + User.workoutSchedule[i].dayWorkouts[0].reps + "\n" 
-					+ User.workoutSchedule[i].dayWorkouts[1].name + " " + User.workoutSchedule[i].dayWorkouts[1].sets + " " + User.workoutSchedule[i].dayWorkouts[1].reps + "\n"
-					+ User.workoutSchedule[i].dayWorkouts[2].name + " " + User.workoutSchedule[i].dayWorkouts[2].sets + " " + User.workoutSchedule[i].dayWorkouts[2].reps + "\n"
-					+ User.workoutSchedule[i].dayWorkouts[3].name + " " + User.workoutSchedule[i].dayWorkouts[3].sets + " " + User.workoutSchedule[i].dayWorkouts[3].reps + "\n"
-					+ User.workoutSchedule[i].dayWorkouts[4].name + " " + User.workoutSchedule[i].dayWorkouts[4].sets + " " + User.workoutSchedule[i].dayWorkouts[4].reps + "\n";
+					User.workoutSchedule[i].dayWorkouts[0].name + " | " + User.workoutSchedule[i].dayWorkouts[0].sets + " | " + User.workoutSchedule[i].dayWorkouts[0].reps + "\n" 
+					+ User.workoutSchedule[i].dayWorkouts[1].name + " | " + User.workoutSchedule[i].dayWorkouts[1].sets + " | " + User.workoutSchedule[i].dayWorkouts[1].reps + "\n"
+					+ User.workoutSchedule[i].dayWorkouts[2].name + " | " + User.workoutSchedule[i].dayWorkouts[2].sets + " | " + User.workoutSchedule[i].dayWorkouts[2].reps + "\n"
+					+ User.workoutSchedule[i].dayWorkouts[3].name + " | " + User.workoutSchedule[i].dayWorkouts[3].sets + " | " + User.workoutSchedule[i].dayWorkouts[3].reps + "\n"
+					+ User.workoutSchedule[i].dayWorkouts[4].name + " | " + User.workoutSchedule[i].dayWorkouts[4].sets + " | " + User.workoutSchedule[i].dayWorkouts[4].reps + "\n";
 					monday.setText(workStr);
 					User.workoutSchedule[i].dayWorkouts[0] = null;
 					User.workoutSchedule[i].dayWorkouts[1] = null;
