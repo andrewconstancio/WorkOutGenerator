@@ -43,6 +43,19 @@ public class ScheduleController implements Initializable  {
 	
 	@FXML
 	public void Restart(ActionEvent event) throws IOException{
+		User.weight = 0;
+		User.height = null;
+		User.gender = "male";
+		User.calories = 0;
+		User.lean = false;
+		User.buff = false;
+		//mondayText.clear();
+		//tuesdayText.clear();
+		//wednesdayText.clear();
+		//thursdayText.clear();
+		//fridayText.clear();
+		//saturdayText.clear();
+		//sundayText.clear();
 		mainPane = FXMLLoader.load(getClass().getResource("Main.fxml"));
 		Scene scene = new Scene(mainPane);
 		Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
@@ -53,6 +66,13 @@ public class ScheduleController implements Initializable  {
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
+		//mondayText.clear();
+		//tuesdayText.clear();
+		//wednesdayText.clear();
+		//thursdayText.clear();
+		//fridayText.clear();
+		//saturdayText.clear();
+		//sundayText.clear();
 		GetSchedule.get_schedule(mondayText, tuesdayText, wednesdayText, thursdayText, fridayText, saturdayText, sundayText);
 	}
 }
