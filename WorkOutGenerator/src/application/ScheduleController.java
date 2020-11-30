@@ -40,7 +40,7 @@ public class ScheduleController implements Initializable  {
 
     @FXML
     private TextArea saturdayText;
-	
+	//restarts the program and when it does reset everything where user can enter brand new information
 	@FXML
 	public void Restart(ActionEvent event) throws IOException{
 		User.weight = 0;
@@ -60,7 +60,7 @@ public class ScheduleController implements Initializable  {
 		window.setScene(scene);
 		window.show();
 	}
-
+	//generates the schedule depending on what user entered and picked
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub

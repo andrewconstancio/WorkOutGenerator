@@ -40,7 +40,9 @@ public class MainController implements Initializable {
     @FXML
     private ToggleButton male_button;
     
-    
+    //if the button has been clicked already then when user press back button from next scene it will still be clicked instead of resetting the buttons and TextField
+    //if no buttons were clicked then set the gender to male since male button is clicked from the beginning also prints out the input user entered without resetting while
+    //changing scene to scene
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		if(User.gender == "male") {
@@ -62,7 +64,7 @@ public class MainController implements Initializable {
 			weight_field.appendText(Integer.toString(User.weight));
 		}
 	}
-
+	//gets the value of weight and the height of the user
     @FXML
     void show_goals_view(ActionEvent event) throws IOException {
     	String weight = weight_field.getText();
@@ -82,7 +84,7 @@ public class MainController implements Initializable {
 		window.setScene(scene);
 		window.show();
     }
-    
+    //marks the button depending on which button user clicks
     @FXML
     void toggle_male_button() {
     	MainModel.toggle_gender_buttons(male_button, female_button, other_button, "male");
