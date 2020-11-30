@@ -27,6 +27,16 @@ public class GetSchedule {
 		
 		int height = Integer.parseInt(User.height.replaceAll("\\D+",""));
 		
+			
+		if(User.lean == null) {
+			User.lean = false;
+		}
+		
+		
+		if(User.buff == null) {
+			User.buff = false;
+		}
+		
 		
 	
 		
