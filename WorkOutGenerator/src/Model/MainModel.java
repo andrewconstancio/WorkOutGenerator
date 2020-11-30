@@ -12,7 +12,14 @@ import application.WorkOut;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.ToggleButton;
-
+/**
+* Does data manipulation for User Object
+* 
+*
+* @author  Andrew Constancio
+* @version 1.0
+* @since   2020-11-29 
+*/
 public class MainModel {
 	
 	static User currUser = new User();

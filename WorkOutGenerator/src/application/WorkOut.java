@@ -1,5 +1,12 @@
 package application;
-//saves name reps and sets from the csv file that has information about the workout
+/**
+* Saves workout object fields such as name, reps, ands sets
+* 
+*
+* @author  Andrew Constancio
+* @version 1.0
+* @since   2020-11-29 
+*/
 public class WorkOut {
 	public String name;
 	public String reps;

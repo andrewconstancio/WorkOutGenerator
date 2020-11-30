@@ -9,7 +9,14 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.fxml.FXMLLoader;
 
-
+/**
+* Starts program
+* 
+*
+* @author  Andrew Constancio
+* @version 1.0
+* @since   2020-11-29 
+*/
 public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
