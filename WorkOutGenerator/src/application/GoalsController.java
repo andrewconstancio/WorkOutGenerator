@@ -35,16 +35,16 @@ public class GoalsController implements Initializable {
 		if(String.valueOf(User.lean) == "true") {
 			box.setSelected(true);
 		}
-		else {
-			box.setSelected(false);
-		}
+		//else {
+		//	box.setSelected(false);
+		//}
 		if(String.valueOf(User.buff) == "true")
 		{
 			box2.setSelected(true);
 		}
-		else {
-			box2.setSelected(false);
-		}
+		//else {
+		//	box2.setSelected(false);
+		//}
 	}
 	
 	@FXML
