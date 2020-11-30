@@ -9,8 +9,6 @@ import javafx.scene.control.TextArea;
 
 public class GetSchedule {
 	
-	
-	
 	@SuppressWarnings("static-access")
 	public static void get_schedule(TextArea monday, TextArea tuesday, TextArea wednesday, TextArea thursday, TextArea friday, TextArea saturday, TextArea sunday) {
 		
@@ -54,8 +52,7 @@ public class GetSchedule {
 					int int_random4 = rand.nextInt(muscleUpperBound); 
 					User.workoutSchedule[i].dayWorkouts[4] = muscleArray.get(int_random4);	
 					
-				} 
-				else if(User.gender == "male" && User.buff == true && height < 70 && User.weight > 150 && User.weight <= 200 && User.calories <= 2000  ) {
+				} else if(User.gender == "male" && User.buff == true && height < 70 && User.weight > 150 && User.weight <= 200 && User.calories <= 2000  ) {
 					
 					int int_random = rand.nextInt(muscleUpperBound); 
 					User.workoutSchedule[i].dayWorkouts[0] = muscleArray.get(int_random);
