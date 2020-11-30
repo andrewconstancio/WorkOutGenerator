@@ -17,30 +17,29 @@ import javafx.stage.Stage;
 
 public class ScheduleController implements Initializable  {
 	
-	@FXML
-	private AnchorPane mainPane;
-	
+    @FXML
+    private TextArea sundayText;
 
-    @FXML
-    private TextArea mondayText;
-    
-    @FXML
-    private TextArea tuesdayText;
-    
-    @FXML
-    private TextArea wedText;
-
-    @FXML
-    private TextArea thurText;
-    
     @FXML
     private TextArea fridayText;
 
     @FXML
-    private TextArea satText;
-    
+    private TextArea tuesdayText;
+
     @FXML
-    private TextArea sunText;
+    private TextArea wednesdayText;
+
+    @FXML
+    private TextArea mondayText;
+
+    @FXML
+    private AnchorPane mainPane;
+
+    @FXML
+    private TextArea thursdayText;
+
+    @FXML
+    private TextArea saturdayText;
 	
 	@FXML
 	public void Restart(ActionEvent event) throws IOException{
@@ -54,6 +53,6 @@ public class ScheduleController implements Initializable  {
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
-		GetSchedule.get_schedule(mondayText, tuesdayText, wedText, thurText, fridayText, satText, sunText);
+		GetSchedule.get_schedule(mondayText, tuesdayText, wednesdayText, thursdayText, fridayText, saturdayText, sundayText);
 	}
 }
