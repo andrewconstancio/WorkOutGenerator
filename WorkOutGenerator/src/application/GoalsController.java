@@ -1,3 +1,11 @@
+/**
+* Gets the data of either if the User wants to be buff or lean 
+* Gets the data of how much calories User takes per week
+* 
+* @author  Aiden Johnson
+* @version 1.0
+* @since   2020-11-29 
+*/
 package application;
 
 import java.io.IOException;
