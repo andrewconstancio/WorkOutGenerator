@@ -1,5 +1,12 @@
 package application;
-//keeps all the values and save it in here until the program restarts
+/**
+* Stores values for User object
+* 
+*
+* @author  Andrew Constancio
+* @version 1.0
+* @since   2020-11-29 
+*/
 public class User {
 	
 	public static int weight;

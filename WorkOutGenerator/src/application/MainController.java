@@ -17,6 +17,14 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import Model.MainModel;
 
+/**
+* Initializes the main view controller and reads in data
+* 
+*
+* @author  Andrew Constancio
+* @version 1.0
+* @since   2020-11-29 
+*/
 public class MainController implements Initializable {
 
     @FXML

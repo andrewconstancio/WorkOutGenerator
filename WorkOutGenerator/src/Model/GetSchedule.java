@@ -6,7 +6,14 @@ import java.util.Random;
 import application.User;
 import application.WorkOut;
 import javafx.scene.control.TextArea;
-
+/**
+* Generates workout program for user
+* 
+*
+* @author  Andrew Constancio
+* @version 1.0
+* @since   2020-11-29 
+*/
 public class GetSchedule {
 	
 	@SuppressWarnings("static-access")
