@@ -38,12 +38,10 @@ public class GetSchedule {
 		}
 		
 		
-	
-		
 		int i;
 		for(i = 0; i < 7; ++i) {
 			if(User.days[i] == 1) {
-				if(User.gender == "male" && User.buff == true && height < 70 && User.weight >= 120 && User.weight <= 150 ) {
+				if(User.gender == "male" && User.buff == true && height < 70 && User.weight >= 120 && User.weight <= 150 && User.calories <= 2000 ) {
 					//males buff
 					int int_random = rand.nextInt(muscleUpperBound); 
 					User.workoutSchedule[i].dayWorkouts[0] = muscleArray.get(int_random);
@@ -57,7 +55,7 @@ public class GetSchedule {
 					User.workoutSchedule[i].dayWorkouts[4] = muscleArray.get(int_random4);	
 					
 				} 
-				else if(User.gender == "male" && User.buff == true && height < 70 && User.weight > 150 && User.weight <= 200 ) {
+				else if(User.gender == "male" && User.buff == true && height < 70 && User.weight > 150 && User.weight <= 200 && User.calories <= 2000  ) {
 					
 					int int_random = rand.nextInt(muscleUpperBound); 
 					User.workoutSchedule[i].dayWorkouts[0] = muscleArray.get(int_random);
@@ -70,7 +68,7 @@ public class GetSchedule {
 					int int_random4 = rand.nextInt(cardioUpperBound); 
 					User.workoutSchedule[i].dayWorkouts[4] = cardioArray.get(int_random4);	
 					
-				} else if(User.gender == "male" && User.buff == true && height > 70 && User.weight > 200 && User.weight <= 300 ) {
+				} else if(User.gender == "male" && User.buff == true && height > 70 && User.weight > 200 && User.weight <= 300 && User.calories <= 2000  ) {
 					
 					int int_random = rand.nextInt(muscleUpperBound); 
 					User.workoutSchedule[i].dayWorkouts[0] = muscleArray.get(int_random);
@@ -83,7 +81,7 @@ public class GetSchedule {
 					int int_random4 = rand.nextInt(cardioUpperBound); 
 					User.workoutSchedule[i].dayWorkouts[4] = cardioArray.get(int_random4);	
 					
-				} else if(User.gender == "male" && User.buff == true && height < 70 && User.weight > 300) {
+				} else if(User.gender == "male" && User.buff == true && height < 70 && User.weight > 300 && User.calories >= 2000 ) {
 					
 					int int_random = rand.nextInt(muscleUpperBound); 
 					User.workoutSchedule[i].dayWorkouts[0] = muscleArray.get(int_random);
@@ -95,7 +93,7 @@ public class GetSchedule {
 					User.workoutSchedule[i].dayWorkouts[3] = cardioArray.get(int_random3);
 					int int_random4 = rand.nextInt(cardioUpperBound); 
 					User.workoutSchedule[i].dayWorkouts[4] = cardioArray.get(int_random4);	
-				} else if(User.gender == "male" && User.lean == true && height < 70 && User.weight >= 120 && User.weight <= 150 ) {
+				} else if(User.gender == "male" && User.lean == true && height < 70 && User.weight >= 120 && User.weight <= 150  && User.calories <= 2000 ) {
 					//males lean
 					System.out.println("it got here");
 					int int_random = rand.nextInt(muscleUpperBound); 
@@ -109,7 +107,7 @@ public class GetSchedule {
 					int int_random4 = rand.nextInt(cardioUpperBound); 
 					User.workoutSchedule[i].dayWorkouts[4] = cardioArray.get(int_random4);	
 					
-				} else if(User.gender == "male" && User.lean == true && height < 70 && User.weight > 150 && User.weight <= 200 ) {
+				} else if(User.gender == "male" && User.lean == true && height < 70 && User.weight > 150 && User.weight <= 200  && User.calories <= 2000 ) {
 					
 					int int_random = rand.nextInt(muscleUpperBound); 
 					User.workoutSchedule[i].dayWorkouts[0] = muscleArray.get(int_random);
@@ -122,7 +120,7 @@ public class GetSchedule {
 					int int_random4 = rand.nextInt(cardioUpperBound); 
 					User.workoutSchedule[i].dayWorkouts[4] = cardioArray.get(int_random4);		
 					
-				} else if(User.gender == "male" && User.lean == true && height > 70 && User.weight > 200 && User.weight <= 300 ) {
+				} else if(User.gender == "male" && User.lean == true && height > 70 && User.weight > 200 && User.weight <= 300 && User.calories >= 2000 ) {
 					
 					int int_random = rand.nextInt(cardioUpperBound); 
 					User.workoutSchedule[i].dayWorkouts[0] = cardioArray.get(int_random);
@@ -135,7 +133,7 @@ public class GetSchedule {
 					int int_random4 = rand.nextInt(cardioUpperBound); 
 					User.workoutSchedule[i].dayWorkouts[4] = cardioArray.get(int_random4);	
 					
-				} else if(User.gender == "male" && User.lean == true && height < 70 && User.weight > 300) {
+				} else if(User.gender == "male" && User.lean == true && height < 70 && User.weight > 300 && User.calories >= 2000 && User.calories >= 2000 ) {
 					
 					int int_random = rand.nextInt(cardioUpperBound); 
 					User.workoutSchedule[i].dayWorkouts[0] = cardioArray.get(int_random);
@@ -147,7 +145,7 @@ public class GetSchedule {
 					User.workoutSchedule[i].dayWorkouts[3] = cardioArray.get(int_random3);
 					int int_random4 = rand.nextInt(cardioUpperBound); 
 					User.workoutSchedule[i].dayWorkouts[4] = cardioArray.get(int_random4);
-				} else if(User.gender == "female" && User.buff == true && height < 70 && User.weight >= 120 && User.weight <= 150 ) {
+				} else if(User.gender == "female" && User.buff == true && height < 70 && User.weight >= 120 && User.weight <= 150 && User.calories <= 2000 ) {
 					// female buff
 					int int_random = rand.nextInt(muscleUpperBound); 
 					User.workoutSchedule[i].dayWorkouts[0] = muscleArray.get(int_random);
@@ -160,7 +158,7 @@ public class GetSchedule {
 					int int_random4 = rand.nextInt(muscleUpperBound); 
 					User.workoutSchedule[i].dayWorkouts[4] = muscleArray.get(int_random4);	
 					
-				} else if(User.gender == "female" && User.buff == true && height < 70 && User.weight > 150 && User.weight <= 200 ) {
+				} else if(User.gender == "female" && User.buff == true && height < 70 && User.weight > 150 && User.weight <= 200 && User.calories <= 2000 ) {
 					
 					int int_random = rand.nextInt(muscleUpperBound); 
 					User.workoutSchedule[i].dayWorkouts[0] = muscleArray.get(int_random);
@@ -173,7 +171,7 @@ public class GetSchedule {
 					int int_random4 = rand.nextInt(cardioUpperBound); 
 					User.workoutSchedule[i].dayWorkouts[4] = cardioArray.get(int_random4);	
 					
-				} else if(User.gender == "female" && User.buff == true && height > 70 && User.weight > 200 && User.weight <= 300 ) {
+				} else if(User.gender == "female" && User.buff == true && height > 70 && User.weight > 200 && User.weight <= 300 && User.calories <= 2000  ) {
 					
 					int int_random = rand.nextInt(muscleUpperBound); 
 					User.workoutSchedule[i].dayWorkouts[0] = muscleArray.get(int_random);
@@ -186,7 +184,7 @@ public class GetSchedule {
 					int int_random4 = rand.nextInt(cardioUpperBound); 
 					User.workoutSchedule[i].dayWorkouts[4] = cardioArray.get(int_random4);	
 					
-				} else if(User.gender == "female" && User.buff == true && height < 70 && User.weight > 300) {
+				} else if(User.gender == "female" && User.buff == true && height < 70 && User.weight > 300 && User.calories >= 2000 ) {
 					
 					int int_random = rand.nextInt(muscleUpperBound); 
 					User.workoutSchedule[i].dayWorkouts[0] = muscleArray.get(int_random);
@@ -198,7 +196,7 @@ public class GetSchedule {
 					User.workoutSchedule[i].dayWorkouts[3] = muscleArray.get(int_random3);
 					int int_random4 = rand.nextInt(cardioUpperBound); 
 					User.workoutSchedule[i].dayWorkouts[4] = cardioArray.get(int_random4);	
-				} else if(User.gender == "female" && User.lean == true && height < 70 && User.weight >= 120 && User.weight <= 150 ) {
+				} else if(User.gender == "female" && User.lean == true && height < 70 && User.weight >= 120 && User.weight <= 150 && User.calories >= 2000 ) {
 					//males lean
 					int int_random = rand.nextInt(muscleUpperBound); 
 					User.workoutSchedule[i].dayWorkouts[0] = muscleArray.get(int_random);
@@ -211,7 +209,7 @@ public class GetSchedule {
 					int int_random4 = rand.nextInt(cardioUpperBound); 
 					User.workoutSchedule[i].dayWorkouts[4] = cardioArray.get(int_random4);	
 					
-				} else if(User.gender == "female" && User.lean == true && height < 70 && User.weight > 150 && User.weight <= 200 ) {
+				} else if(User.gender == "female" && User.lean == true && height < 70 && User.weight > 150 && User.weight <= 200 && User.calories >= 2000 ) {
 					
 					int int_random = rand.nextInt(muscleUpperBound); 
 					User.workoutSchedule[i].dayWorkouts[0] = muscleArray.get(int_random);
@@ -224,7 +222,7 @@ public class GetSchedule {
 					int int_random4 = rand.nextInt(cardioUpperBound); 
 					User.workoutSchedule[i].dayWorkouts[4] = cardioArray.get(int_random4);		
 					
-				} else if(User.gender == "female" && User.lean == true && height > 70 && User.weight > 200 && User.weight <= 300 ) {
+				} else if(User.gender == "female" && User.lean == true && height > 70 && User.weight > 200 && User.weight <= 300 && User.calories >= 2000 ) {
 					
 					int int_random = rand.nextInt(cardioUpperBound); 
 					User.workoutSchedule[i].dayWorkouts[0] = cardioArray.get(int_random);
@@ -312,7 +310,7 @@ public class GetSchedule {
 					User.workoutSchedule[i].dayWorkouts[2] = null;
 					User.workoutSchedule[i].dayWorkouts[3] = null;
 					User.workoutSchedule[i].dayWorkouts[4] = null;
-					System.out.println(workStr);
+					
 				}
 			} else if(i == 1) {
 				if(User.workoutSchedule[i].dayWorkouts[0].name != "None") {

@@ -14,9 +14,9 @@
              </font>
         </Text>
         <TextField fx:id="weight_field" layoutX="80.0" layoutY="276.0" prefHeight="48.0" prefWidth="239.0" styleClass="input-field" />
-        <Text fill="WHITE" layoutX="80.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weight" wrappingWidth="68.9716796875" />
+        <Text fill="WHITE" layoutX="80.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weight (lbs)" wrappingWidth="68.9716796875" />
       <TextField fx:id="height_field" layoutX="576.0" layoutY="276.0" prefHeight="48.0" prefWidth="239.0" styleClass="input-field" />
-      <Text fill="WHITE" layoutX="576.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Height" wrappingWidth="68.9716796875" />
+      <Text fill="WHITE" layoutX="576.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Height (feet)" wrappingWidth="68.9716796875" />
       <Button fx:id="next_main_button" layoutX="693.0" layoutY="525.0" mnemonicParsing="false" onAction="#show_goals_view" prefHeight="41.0" prefWidth="122.0" styleClass="button-next" text="Next">
          <font>
             <Font size="24.0" />
