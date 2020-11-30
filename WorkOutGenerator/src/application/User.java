@@ -6,8 +6,8 @@ public class User {
 	public static String height;
 	public static String gender;
 	public static int[] days = new int[7];
-	public static Boolean lean;
-	public static Boolean buff;
+	public static Boolean lean = false;
+	public static Boolean buff = false;
 	public static int calories;
 	
 	

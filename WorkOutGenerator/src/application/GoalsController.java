@@ -33,18 +33,20 @@ public class GoalsController implements Initializable {
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		if(String.valueOf(User.lean) == "true") {
+			isLean = true;
 			box.setSelected(true);
 		}
-		else {
-			box.setSelected(false);
-		}
+		//else {
+		//	box.setSelected(false);
+		//}
 		if(String.valueOf(User.buff) == "true")
 		{
+			isBuff = true;
 			box2.setSelected(true);
 		}
-		else {
-			box2.setSelected(false);
-		}
+		//else {
+		//	box2.setSelected(false);
+		//}
 	}
 	
 	@FXML
@@ -53,12 +55,14 @@ public class GoalsController implements Initializable {
 		if(isLean == true) {
 			isLean = false;
 			User.lean = false;
-			User.buff = true;
+			box.setSelected(false);
+			//User.buff = true;
 		}
 		else {
 			isLean = true;
 			User.lean = true;
-			User.buff = false;
+			box.setSelected(true);
+			//User.buff = false;
 		}
 	}
 	@FXML
@@ -67,12 +71,14 @@ public class GoalsController implements Initializable {
 		if(isBuff == true) {
 			isBuff = false;
 			User.buff = false;
-			User.lean = true;
+			box2.setSelected(false);
+			//ser.lean = true;
 		}
 		else {
 			isBuff = true;
 			User.buff = true;
-			User.lean = false;
+			box2.setSelected(true);
+			//User.lean = false;
 		}
 		
 	}

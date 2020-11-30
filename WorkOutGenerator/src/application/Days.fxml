@@ -36,37 +36,37 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <CheckBox fx:id="sat" layoutX="612.0" layoutY="347.0" mnemonicParsing="false" onAction="#Saturday" styleClass="checkbox" text="Saturday">
+      <CheckBox layoutX="612.0" layoutY="347.0" mnemonicParsing="false" onAction="#Saturday" styleClass="checkbox" text="Saturday">
          <font>
             <Font size="30.0" />
          </font>
       </CheckBox>
-      <CheckBox fx:id="sun" layoutX="612.0" layoutY="417.0" mnemonicParsing="false" onAction="#Sunday" styleClass="checkbox" text="Sunday">
+      <CheckBox layoutX="612.0" layoutY="417.0" mnemonicParsing="false" onAction="#Sunday" styleClass="checkbox" text="Sunday">
          <font>
             <Font size="30.0" />
          </font>
       </CheckBox>
-      <CheckBox fx:id="mon" layoutX="95.0" layoutY="274.0" mnemonicParsing="false" onAction="#Monday" styleClass="checkbox" text="Monday">
+      <CheckBox layoutX="95.0" layoutY="274.0" mnemonicParsing="false" onAction="#Monday" styleClass="checkbox" text="Monday">
          <font>
             <Font size="30.0" />
          </font>
       </CheckBox>
-      <CheckBox fx:id="tues" layoutX="369.0" layoutY="274.0" mnemonicParsing="false" onAction="#Tuesday" styleClass="checkbox" text="Tuesday">
+      <CheckBox layoutX="369.0" layoutY="274.0" mnemonicParsing="false" onAction="#Tuesday" styleClass="checkbox" text="Tuesday">
          <font>
             <Font size="30.0" />
          </font>
       </CheckBox>
-      <CheckBox fx:id="wed" layoutX="612.0" layoutY="274.0" mnemonicParsing="false" onAction="#Wednesday" styleClass="checkbox" text="Wednesday">
+      <CheckBox layoutX="612.0" layoutY="274.0" mnemonicParsing="false" onAction="#Wednesday" styleClass="checkbox" text="Wednesday">
          <font>
             <Font size="30.0" />
          </font>
       </CheckBox>
-      <CheckBox fx:id="thur" layoutX="95.0" layoutY="353.0" mnemonicParsing="false" onAction="#Thursday" styleClass="checkbox" text="Thursday">
+      <CheckBox layoutX="95.0" layoutY="353.0" mnemonicParsing="false" onAction="#Thursday" styleClass="checkbox" text="Thursday">
          <font>
             <Font size="30.0" />
          </font>
       </CheckBox>
-      <CheckBox fx:id="fri" layoutX="370.0" layoutY="347.0" mnemonicParsing="false" onAction="#Friday" styleClass="checkbox" text="Friday">
+      <CheckBox layoutX="370.0" layoutY="347.0" mnemonicParsing="false" onAction="#Friday" styleClass="checkbox" text="Friday">
          <font>
             <Font size="30.0" />
          </font>
