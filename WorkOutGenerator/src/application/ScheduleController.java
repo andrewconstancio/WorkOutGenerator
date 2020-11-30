@@ -15,7 +15,14 @@ import javafx.scene.control.TextArea;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-
+/**
+* this controller works with the Schedule.fxml
+* it prints the workouts User can do through out the week
+* 
+* @author  Farhan Hassan
+* @version 1.0
+* @since   2020-11-29 
+*/
 
 public class ScheduleController implements Initializable  {
 	

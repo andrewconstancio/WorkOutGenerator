@@ -16,7 +16,13 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-
+/**
+* gets the input from user about which days User can/wants to workout
+* 
+* @author  Raisul Islam
+* @version 1.0
+* @since   2020-11-29 
+*/
 public class DaysController {
 
 	ObservableList<Integer> list = FXCollections.observableArrayList(1,2,3,4,5,6,7);
